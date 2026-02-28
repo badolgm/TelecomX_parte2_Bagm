@@ -1,15 +1,25 @@
+<div align="center">
+
+<!-- Banner principal -->
+<img src="assets/images/img.png" alt="Challenge 2 Data Science - Telecom X Parte 2" width="100%"/>
+
+<br/>
+
 # 📡 TelecomX — Predicción de Evasión de Clientes · Parte 2
 
 ### *Challenge 2 · Data Science · Alura Latam + Oracle Next Education*
 
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-2.0+-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.0+-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Status](https://img.shields.io/badge/Status-En%20Desarrollo-F59E0B?style=for-the-badge)
+<br/>
 
-> 🚧 **Proyecto en desarrollo** — Este README se actualiza progresivamente  
-> conforme se completan las tarjetas del tablero Trello del challenge.
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-2.0+-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.0+-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Colab](https://img.shields.io/badge/Google%20Colab-Ready-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/)
+[![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](https://github.com/badolgm/TelecomX_parte2_Bagm/blob/main/LICENSE)
+[![Status](https://img.shields.io/badge/Status-Completado-6366f1?style=for-the-badge)](https://github.com/badolgm/TelecomX_parte2_Bagm)
+
+</div>
 
 ---
 
@@ -17,9 +27,9 @@
 
 1. [Sobre el Proyecto](#sec-sobre)
 2. [Relación con la Parte 1](#sec-parte1)
-3. [Metodología y Tarjetas](#sec-metodologia)
+3. [Metodología](#sec-metodologia)
 4. [Estructura del Repositorio](#sec-estructura)
-5. [Modelos a Implementar](#sec-modelos)
+5. [Modelos Implementados](#sec-modelos)
 6. [Resultados del Análisis](#sec-resultados)
 7. [Conclusiones Estratégicas](#sec-conclusiones)
 8. [Tecnologías Utilizadas](#sec-tecnologias)
@@ -32,21 +42,15 @@
 
 ## 📝 Sobre el Proyecto
 
-> **Objetivo:** Predecir con anticipación qué clientes de Telecom X tienen mayor probabilidad  
-> de abandonar el servicio, identificando los factores que más influyen en esa decisión.
+> **Objetivo:** Predecir con anticipación qué clientes de Telecom X tienen mayor probabilidad de abandonar el servicio, identificando los factores que más influyen en esa decisión.
 
-Este proyecto es la **Parte 2** del Challenge 2 de Data Science del programa  
-**ONE (Oracle Next Education)** en alianza con **Alura Latam**.
-
-Partiendo del dataset limpio generado en la **Parte 1** (pipeline ETL completo),  
-se aplican estadística, análisis de correlación y **modelos de Machine Learning**  
-para construir un sistema predictivo de churn.
+Este proyecto es la **Parte 2** del Challenge 2 de Data Science del programa **ONE (Oracle Next Education)** en alianza con **Alura Latam**. Partiendo del dataset limpio generado en la Parte 1 (pipeline ETL completo), se aplican estadística, análisis de correlación y **modelos de Machine Learning** para construir un sistema predictivo de churn.
 
 <div align="center">
 
-| 📊 Dataset | 👥 Registros | 🎯 Variable Objetivo | 📈 Tasa de Evasión |
+| 📊 Dataset | 👥 Registros válidos | 🎯 Variable objetivo | 📈 Tasa de Evasión |
 |:---:|:---:|:---:|:---:|
-| TelecomX Customers (CSV tratado) | 7.043 clientes | `Evasion_Binaria` (0/1) | ~26.5% |
+| TelecomX Customers (CSV tratado) | 7.043 clientes | `Evasion_Binaria` (0/1) | 26.5% |
 
 </div>
 
@@ -56,67 +60,57 @@ para construir un sistema predictivo de churn.
 
 ## 🔗 Relación con la Parte 1
 
-Este proyecto es **continuación directa** del repositorio  
-[ChallengeTELECOM-X](https://github.com/badolgm/ChallengeTELECOM-X),  
-donde se realizó el pipeline ETL completo:
+Este proyecto es **continuación directa** del repositorio [ChallengeTELECOM-X](https://github.com/badolgm/ChallengeTELECOM-X), donde se realizó:
 
-- ✅ Extracción de datos JSON desde la API pública
-- ✅ Limpieza y tratamiento de inconsistencias
-- ✅ Feature Engineering (`Cuentas_Diarias`)
-- ✅ Estandarización y traducción de columnas al español
-- ✅ Análisis Exploratorio de Datos (EDA) completo
+- Extracción de datos JSON desde la API pública
+- Limpieza y tratamiento de inconsistencias
+- Feature Engineering (`Cuentas_Diarias`)
+- Estandarización y traducción de columnas al español
+- Análisis exploratorio de datos (EDA) completo
 
-El archivo `telecomx_limpio.csv` generado en la Parte 1  
-es el **punto de entrada** de este proyecto.
+El archivo `telecomx_limpio.csv` generado en la Parte 1 es el **punto de entrada** de este proyecto.
 
 ---
 
 <a id="sec-metodologia"></a>
 
-## 🏗️ Metodología y Tarjetas
+## 🏗️ Metodología
 
-El proyecto sigue la metodología ágil del **tablero Trello** del challenge,  
-con commits individuales por tarjeta completada.
+El proyecto sigue una arquitectura de **4 fases** basada en las tarjetas del tablero Trello del challenge:
 
 ---
 
 ### 🛠️ Fase 1 — Preparación de los Datos
 
-| # | Tarjeta | Estado |
-|---|---------|--------|
-| 1 | Extracción del Archivo Tratado | 🔲 Pendiente |
-| 2 | Eliminación de Columnas Irrelevantes | 🔲 Pendiente |
-| 3 | Encoding | 🔲 Pendiente |
-| 4 | Verificación de la Proporción de Cancelación | 🔲 Pendiente |
-| 5 | Normalización o Estandarización | 🔲 Pendiente |
+| Tarea | Descripción |
+|-------|-------------|
+| 📂 Extracción | Carga del CSV tratado de la Parte 1 |
+| 🗑️ Eliminación | Columnas irrelevantes (`ID_Cliente`, `Evasion` texto, `Cuentas_Diarias`) |
+| 🔢 Encoding | One-Hot Encoding para categóricas; Label Encoding binario para Yes/No |
+| ⚖️ Proporción | Verificación de desbalanceo de clases (73.5% vs 26.5%) |
+| 📏 Escalado | StandardScaler sobre variables numéricas continuas (para Regresión Logística) |
 
 ---
 
 ### 🎯 Fase 2 — Correlación y Selección de Variables
 
-| # | Tarjeta | Estado |
-|---|---------|--------|
-| 6 | Análisis de Correlación | 🔲 Pendiente |
-| 7 | Análisis Dirigido | 🔲 Pendiente |
+- **Matriz de correlación** de variables numéricas y la variable objetivo
+- **Análisis dirigido** con histogramas y boxplots: Meses_Contrato, Cargos_Mensuales y Cargos_Totales vs Evasión
 
 ---
 
 ### 🤖 Fase 3 — Modelado Predictivo
 
-| # | Tarjeta | Estado |
-|---|---------|--------|
-| 8 | Separación de Datos | 🔲 Pendiente |
-| 9 | Creación de Modelos | 🔲 Pendiente |
-| 10 | Evaluación de los Modelos | 🔲 Pendiente |
+- **División 80/20** con `stratify=y` para preservar la proporción de clases
+- Entrenamiento y evaluación de **2 modelos** con enfoques complementarios
+- Métricas: Accuracy, Precisión, Recall, F1-Score y Matriz de Confusión
 
 ---
 
 ### 📋 Fase 4 — Interpretación y Conclusiones
 
-| # | Tarjeta | Estado |
-|---|---------|--------|
-| 11 | Análisis de Importancia de Variables | 🔲 Pendiente |
-| 12 | Conclusión e Informe Final | 🔲 Pendiente |
+- Análisis de importancia de variables por modelo
+- Informe final con hallazgos y recomendaciones estratégicas
 
 ---
 
@@ -132,24 +126,30 @@ TelecomX_parte2_Bagm/
 ├── 📄 README.md
 ├── 📄 LICENSE
 │
-└── 📂 assets/                        ← (imagen banner — próximamente)
+└── 📂 assets/
     └── 📂 images/
+        └── 🖼️ img.png
 ```
 
 ---
 
 <a id="sec-modelos"></a>
 
-## 🤖 Modelos a Implementar
+## 🤖 Modelos Implementados
 
-Se implementarán **dos modelos** con enfoques complementarios:
+### Modelo 1 — Regresión Logística
 
-| Modelo | Normalización | Justificación |
-|--------|---------------|---------------|
-| **Regresión Logística** | ✅ Sí | Sensible a la escala; coeficientes interpretables como factores de riesgo |
-| **Random Forest** | ❌ No | Basado en árboles; captura relaciones no lineales e incluye importancia de variables |
+- **Datos de entrada:** escalados con `StandardScaler`
+- **Parámetros clave:** `class_weight='balanced'`, `max_iter=1000`, `solver='lbfgs'`
+- **Justificación:** modelo lineal sensible a la escala; los coeficientes son interpretables directamente como factores de riesgo
+- **Fortaleza principal:** alto Recall — detecta bien a los clientes que sí van a evadir
 
-> 📊 *Los resultados y métricas se publicarán aquí al completar la Fase 3.*
+### Modelo 2 — Random Forest
+
+- **Datos de entrada:** sin escalar (árboles no son sensibles a la escala)
+- **Parámetros clave:** `n_estimators=200`, `max_depth=12`, `class_weight='balanced'`
+- **Justificación:** captura relaciones no lineales y produce un ranking de importancia de variables nativo
+- **Fortaleza principal:** mayor exactitud general y menor riesgo de overfitting por ser un ensemble
 
 ---
 
@@ -157,11 +157,22 @@ Se implementarán **dos modelos** con enfoques complementarios:
 
 ## 📊 Resultados del Análisis
 
-> 🚧 *Sección en construcción — se completará al finalizar las Fases 2 y 3.*
+### Variables con mayor poder predictivo
 
-Los resultados del análisis exploratorio, las correlaciones identificadas  
-y las métricas de los modelos estarán disponibles aquí una vez completadas  
-las tarjetas correspondientes.
+| Ranking | Variable | Dirección del efecto |
+|---|---|---|
+| 1 | `Meses_Contrato` | Negativo — más permanencia = menor riesgo |
+| 2 | `Tipo_Contrato_Month-to-month` | Positivo — contrato mensual = mayor riesgo |
+| 3 | `Cargos_Totales` | Asociado a la permanencia |
+| 4 | `Cargos_Mensuales` | Positivo — precio alto = mayor riesgo |
+| 5 | `Metodo_Pago_Electronic check` | Positivo — perfil de riesgo identificado |
+
+### Desbalanceo de Clases
+
+El dataset presenta un desbalanceo moderado de **~3:1** (No evadió vs Evadió). Ambos modelos se configuraron con `class_weight='balanced'` para compensarlo sin técnicas de resampling.
+
+> 📊 **¿Quieres ver todos los gráficos y métricas exactas?** Disponibles en el notebook:  
+> **[▶️ Abrir en Google Colab](https://colab.research.google.com/github/badolgm/TelecomX_parte2_Bagm/blob/main/TelecomX_parte2_Bagm.ipynb)**
 
 ---
 
@@ -169,11 +180,21 @@ las tarjetas correspondientes.
 
 ## 🎯 Conclusiones Estratégicas
 
-> 🚧 *Sección en construcción — se completará al finalizar la Fase 4.*
+El análisis confirma que la evasión en Telecom X es **predecible** con alta confiabilidad. El perfil de cliente en riesgo es claro:
 
-Las conclusiones, el perfil del cliente en riesgo y las recomendaciones  
-estratégicas basadas en los modelos estarán disponibles aquí  
-al completar el informe final.
+> Cliente con contrato **mes a mes**, **menos de 12 meses** de permanencia, **cargos mensuales elevados** y que paga mediante **cheque electrónico**.
+
+**Recomendaciones basadas en los modelos:**
+
+**1. Implementar el modelo en producción** para generar alertas mensuales de clientes en riesgo, permitiendo acciones de retención proactivas antes del abandono.
+
+**2. Foco en los primeros 6 meses** — el período de mayor riesgo identificado por `Meses_Contrato`. Un programa de onboarding activo puede reducir significativamente la evasión temprana.
+
+**3. Campaña de migración de contratos mensuales** a anuales con incentivos concretos — este es el factor de mayor impacto predictivo según ambos modelos.
+
+**4. Revisión de planes premium** — la correlación positiva entre cargos altos y evasión indica que el precio percibido no está justificado por el valor ofrecido en varios segmentos.
+
+**5. Incentivo al pago automático** — migrar del cheque electrónico a débito o tarjeta reduce el perfil de riesgo de forma significativa.
 
 ---
 
@@ -204,8 +225,7 @@ al completar el informe final.
 
 ### Requisito previo
 
-Tener el archivo `telecomx_limpio.csv` generado en la  
-**[Parte 1 del proyecto](https://github.com/badolgm/ChallengeTELECOM-X)**.
+Tener el archivo `telecomx_limpio.csv` generado en la **[Parte 1 del proyecto](https://github.com/badolgm/ChallengeTELECOM-X)**.
 
 ### Opción A — Google Colab (Recomendado)
 
@@ -252,8 +272,6 @@ Desarrollado con ❤️ en el marco de **Alura Latam + Oracle Next Education**
 
 <div align="center">
 
-📄 Este proyecto está bajo la **Licencia MIT** — ver el archivo
-[LICENSE](https://github.com/badolgm/TelecomX_parte2_Bagm/blob/main/LICENSE)
-para más detalles.
+📄 Este proyecto está bajo la **Licencia MIT** — ver el archivo [LICENSE](https://github.com/badolgm/TelecomX_parte2_Bagm/blob/main/LICENSE) para más detalles.
 
 </div>
